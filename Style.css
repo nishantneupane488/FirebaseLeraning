@@ -1,0 +1,216 @@
+/* Global Styles */
+
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font family for body */
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+
+/* Set background color, text color, and padding for header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Set font size, margin, text transform, and text alignment for h1 in header */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Form Styles */
+
+/* Set max width, margin, background color, padding, border radius, and box shadow for form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Set display, margin, font size, font weight, text color, background color, padding, border radius, and border for labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Set display, width, padding, border, border radius, margin bottom, font size, text color, and background color for input fields of types text, number, and date */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+}
+
+/* Set outline and border color on focus for input fields of types text, number, and date */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Set background color, text color, padding, border radius, border, font size, and cursor for button */
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Set background color, text color, box shadow, and transition on hover for button */
+button:hover {
+  background-color: #2c3e50;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Set background color, text color, and padding for alert */
+.alert {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Form Container Styles */
+
+/* Set float, width, and padding for form container */
+.fm {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  }
+  
+  /* Data Table Container Styles */
+  
+  /* floating the data table container to the right */
+  .dt {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  }
+  
+  /* Data Table Styles */
+  
+  /* Styling the review table */
+  #review-table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  
+  #review-table td,
+  #review-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  }
+  
+  /* Setting the background color and font color of table header */
+  #review-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  }
+  
+  /* Setting the height and scroll for table body */
+  #review-table tbody {
+  height: 300px;
+  overflow-y: scroll;
+  }
+  
+  /* Setting the background color and font color of topic row */
+  .topic {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  }
+  
+  /* Setting the max height and vertical scrollbar for table body */
+  tbody {
+  max-height: 300px;
+  overflow-y: auto;
+  }
+  
+  /* Setting the height and vertical scrollbar for table wrapper */
+  .table-wrapper {
+  height: 300px;
+  overflow: auto;
+  }
+  
+  /* Setting the position and background color of table header */
+  thead {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  }
+  
+  /* Setting the max height and vertical scrollbar for table body */
+  tbody {
+  max-height: 300px;
+  overflow-y: auto;
+  }
+  
+  /* Setting the height and vertical scrollbar for table wrapper */
+  .table-wrapper {
+  height: 300px; /*Change the height to your preferred value */
+  overflow: auto;
+  }
+  
+  /* Setting the margin and position of buttons */
+  .but {
+  margin-top: 10%;
+  margin-left: 25%;
+  }
+  
+  /* Setting the display and margin of delete and edit buttons */
+  .delete-review {
+  display: none;
+  margin-right: 25px;
+  }
+  
+  .edit-review {
+  margin-right: 25px;
+  display: none;
+  }
+  
+  /* Setting the display, justification, and alignment for center div */
+  #cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  /* Setting the margin of submit button */
+  #submit-btn{
+  margin-left: 50px;
+  }
