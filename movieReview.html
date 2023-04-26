@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Review Form</title>
+    <link rel="stylesheet" href="Style.css"> <!-- This line links the CSS file -->
+  </head>
+  <body>
+    <div class="topic"><h1>Movie Review Form</h1></div>
+    <div class="fm">
+      <form id="review-form"> <!-- This is the form for the movie review -->
+        <div class="alert" style="display: none;">Thanks for your Review</div> <!-- This is the alert message that appears after submitting the review form -->
+
+        <label for="movie-input">Movie:</label>
+        <input type="text" id="name" name="movie" required><br> <!-- This is the input field for the movie name -->
+
+        <label for="rating-input">Rating:</label>
+        <input type="number" id="rating" name="rating" min="0" max="5" required><br> <!-- This is the input field for the movie rating -->
+
+        <label for="director-input">Director:</label>
+        <input type="text" id="dir_name" name="director" required><br> <!-- This is the input field for the movie director -->
+
+        <label for="date-input">Release Date:</label>
+        <input type="date" id="date" name="releaseDate" required><br> <!-- This is the input field for the movie release date -->
+
+        <div id="cent">
+          <button type="submit">Add Review</button> <!-- This is the submit button to add a new review -->
+          <button type="submit" id="submit-btn">Edit Review</button> <!-- This is the submit button to edit an existing review -->
+        </div>
+      </form>
+    </div>
+    <div class="dt">
+      <section id="reviews">
+        <h2>All Reviews</h2>
+        <div class="table-wrapper">
+          <table id="review-table">
+            <thead>
+              <tr>
+                <th>Movie</th>
+                <th>Rating</th>
+                <th>Director</th>
+                <th>Release Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody></tbody> <!-- This is the body of the table where the reviews will be displayed -->
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./script.js"></script> <!-- This is the JavaScript file for the form submission and Firebase integration -->
+  </body>
+</html>
